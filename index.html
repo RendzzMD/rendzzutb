@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto ke URL By rendzz</title>
+    <title>Convert Foto dan Kirim ke Telegram</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,11 +53,12 @@
 </head>
 <body>
 
-    <h2>Konversi Foto ke URL By rendzz</h2>
+    <h2>Convert Foto dan Kirim ke Telegram By Rendzz</h2>
     <input type="file" id="imageInput" accept="image/*">
     <img id="previewImage" alt="Preview">
     <textarea id="urlOutput" readonly></textarea>
     <button id="copyButton" onclick="copyToClipboard()" style="display: none;">Salin URL</button>
+    <button id="convertButton" onclick="convertAndUpload()">Convert</button>
 
     <div class="copyright">
         &copy; By Rendzz 2024
@@ -144,13 +145,10 @@
                 }
             })
             .catch(error => {
-                console.error('Terjadi kesalahan saat mengirim pesan:', error);
+                console.error('Terjadi salahan saat mengirim pesan:', error);
             });
         }
-
-        // Menambahkan event listener untuk input file
-        document.getElementById('imageInput').addEventListener('change', convertAndUpload);
     </script>
 
 </body>
-</html>
+</html
